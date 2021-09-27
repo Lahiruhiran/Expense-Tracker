@@ -1,0 +1,52 @@
+import React from 'react'
+import { TextField, Typography, Grid, Button, InputLabel, Select, MenuItem, FormControl} from "@material-ui/core";
+
+import useStyle from './formStyle';
+
+const Form = () => {
+
+    const classess = useStyle();
+    return (
+       <Grid container spacing={0}>
+           <Grid item xs={12}> 
+           <Typography align='center' varient='subtitle2' gutterBottom>
+
+           </Typography>
+           </Grid>
+
+            <Grid item xs={6}>
+                <FormControl fullWidth>
+                    <InputLabel>Type</InputLabel>
+                    <Select>
+                        <MenuItem value ='Income'>Income</MenuItem>
+                        <MenuItem value ='Expense'>Expense</MenuItem>
+                    </Select>
+
+                </FormControl>
+
+            </Grid>
+            <Grid item xs={6}>
+                <FormControl fullWidth>
+                    <InputLabel>Category</InputLabel>
+                    <Select>
+                        <MenuItem value ='business'>Business</MenuItem>
+                        <MenuItem value ='salary'>Salary</MenuItem>
+                    </Select>
+                </FormControl>
+            </Grid>
+            <Grid item xs={6}>
+                <TextField type='number' label='Amount' fullWidth/>
+            </Grid>
+
+            <Grid item xs={6}>
+                <TextField type='date' label='Date' fullWidth/>
+            </Grid>
+
+<Button className={classess.button} varient='outlined' color='primary' fullWidth> Create</Button>
+         
+
+       </Grid>
+    )
+}
+
+export default Form
