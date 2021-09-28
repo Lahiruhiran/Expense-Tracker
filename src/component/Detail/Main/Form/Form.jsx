@@ -7,9 +7,9 @@ const Form = () => {
 
     const classess = useStyle();
     return (
-       <Grid container spacing={0}>
+       <Grid container spacing={2}>
            <Grid item xs={12}> 
-           <Typography align='center' varient='subtitle2' gutterBottom>
+           <Typography align='center' variant='subtitle2' gutterBottom>
 
            </Typography>
            </Grid>
@@ -42,11 +42,9 @@ const Form = () => {
                 <TextField type='date' label='Date' fullWidth/>
             </Grid>
 
-<Button className={classess.button} varient='outlined' color='primary' fullWidth> Create</Button>
-         
-
+<Button className={classess.button} variant='outlined' color='primary' fullWidth> Create</Button>
        </Grid>
-    )
-}
+    );
+};
 
 export default Form

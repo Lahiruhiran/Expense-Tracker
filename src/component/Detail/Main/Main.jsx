@@ -11,8 +11,8 @@ const Main = () => {
       <Card className={classes.root}>
           <CardHeader  title='Expense Tracker' subheader='Powerd By Speechly'/>
           <CardContent>
-              <Typography align='center' varient='h5'> Total Balance $1000</Typography>
-              <Typography varient='subtitle'style={{ lineHeight:'1.5 em', margin: '20px'}}>
+              <Typography align='center' variant='h5'> Total Balance $1000</Typography>
+              <Typography variant='subtitle'style={{ lineHeight:'1.5 em', margin: '20px'}}>
                   Try Saying: Add income for $1000 in category salary for Monday...
               </Typography>
               <Divider />
