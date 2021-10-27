@@ -10,6 +10,7 @@ const InfoCard = () => {
       for {isIncome ? '$100 ' : '$50 '}  
       in Category {isIncome ? 'Salary ' : 'Travel '}
       for {isIncome ? 'Monday ' : 'Thursday '}
+      console.log("Hi octomber");
     </div>
   );
 };
